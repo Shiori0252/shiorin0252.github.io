@@ -1,0 +1,301 @@
+/* 全頁に適用設定 */
+/* 背景 */
+.a {
+  /* 画像ファイルの指定 */
+  background: url('https://stat.ameba.jp/user_images/20230405/17/migomigo7/37/95/j/o0842119115265774640.jpg') repeat-y center center;
+  background-size: cover;
+  
+  /* 繰り返しを無効化 */
+  background-position: center;
+
+  /*スクロールしても背景が固定されるようにする */
+  padding: 5px 5px 5px 0px;
+}
+
+.b {
+  padding: 20px 20px 20px 20px;
+  /* 画面の縦幅調整 */
+}
+
+.c {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  border: 1px solid #fff;
+  height: 100%;
+}
+
+html {
+  /* フォント */
+  font-family: 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', '游明朝', 'Yu Mincho', '游明朝体', 'YuMincho', 'ＭＳ Ｐ明朝', 'MS PMincho', serif;
+}
+
+/* 付箋風デザイン */
+h1 {
+  background: #dfefff;
+  /* 枠の点々の中側 */
+  box-shadow: 0px 0px 0px 5px #dfefff;
+  /* 枠の点々の外側 */
+  border: dashed 2px rgb(236, 169, 236);
+  /* 枠の点々 */
+  padding: 0.2em 0.5em;
+}
+
+/* グラデーション下線 */
+h2 {
+  position: relative;
+  padding: 0.25em 0;
+  font-size: 20px;
+}
+
+h2:after {
+  
+  content: "";
+  display: block;
+  height: 4px;
+  background: -webkit-linear-gradient(to right, rgb(132, 90, 230), transparent);
+  background: linear-gradient(to right, rgb(90, 118, 230), transparent);
+}
+
+p {
+  font-size: 18px;
+}
+
+a:link {
+  /* リンクの下線消す */
+  text-decoration: none;
+}
+
+/* ヒーロー */
+/* メイン */
+/* 枠デザイン */
+.box {
+  position: relative;
+  margin: 2em 0;
+  padding: 0.5em 1em;
+  border: solid 3px #63dfef;
+  /* 枠色 */
+  border-radius: 8px;
+}
+
+.box .box-title {
+  position: absolute;
+  display: inline-block;
+  top: -13px;
+  left: 10px;
+  padding: 0 9px;
+  line-height: 1;
+  /* 枠タイトルとした文字かぶらないように調整 */
+  font-size: 25px;
+  /* 枠タイトルサイズ */
+  background: #FFF;
+  /* 枠タイトル文字下色 */
+  color: #276cd3;
+  /* 枠タイトル色 */
+  font-weight: bold;
+}
+
+.box p {
+  margin: 0;
+  padding: 0;
+}
+
+/* フッター */
+.page a {
+  background: #eee;
+  border-radius: 3px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 220px;
+  padding: 10px 25px;
+  color: #313131;
+  transition: 0.3s ease-in-out;
+  font-weight: 600;
+  box-shadow: 5px 5px 0 #6bb6ff;
+}
+
+.page:hover {
+  background-color: #b3d9ff;
+  box-shadow: 0 0 0;
+}
+
+/* 戻るボタン */
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #ec3fdd7e;
+  /* 矢印の外側丸の内側 */
+  padding: 20px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 25px;
+  transition: transform 0.3s ease;
+}
+
+.back-to-top:hover {
+  animation: spin 0.6s linear;
+}
+
+/* 戻るボタン動き */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* 個別スタイル */
+/* index.html */
+table{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table tr{
+  border-bottom: solid 2px white;
+}
+
+table tr:last-child{
+  border-bottom: none;
+}
+.icon {
+  width: 60px;
+  height: 60px;
+  vertical-align: middle;
+  margin-right: 6px;
+  border-radius: 50%; /* 画像を真円にしてくれます。 */
+}
+
+table th{
+  position: relative;
+  width: 20%;
+  background-color: #52c2d0;
+  color: white;
+  padding: 10px 0;
+}
+table th:after{
+  display: block;
+  content: "";
+  width: 0px;
+  height: 0px;
+  top:calc(50% - 10px);
+  right:-10px;
+  border-left: 10px solid #52c2d0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+table td{
+  text-align: left;
+  width: 70%;
+  text-align: center;
+  background-color: #eee;
+  padding: 10px 0;
+}
+
+/* house.html */
+.door img {
+  display: flex;
+  justify-content: space-between;
+}
+.door .image {
+  width: 640px;
+  /*画像サイズ指定*/
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+/* index.html */
+
+
+/* リンクボタン */
+.buttons {
+  margin: 20px;
+  text-align: center;
+}
+.btn-hover {
+  width: 400px;
+  /* 横幅 */
+  font-size: 16px;
+  font-weight: 500;
+  /* 文字太さ */
+  color: #fff;
+  /* 文字色 */
+  margin: 10px;
+  /* ボタン間調整 */
+  height: 55px;
+  text-align: center;
+  border: none;
+  background-size: 600% 100%;
+  border-radius: 70px;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+.btn-hover:hover {
+  background-position: 100% 0;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+.btn-hover:focus {
+  outline: none;
+}
+.btn-hover.color-1 {
+  background-image: linear-gradient(to right, #e45dc9, #ea51bc, #d797ce, #ec81dc);
+  box-shadow: 0 4px 15px 0 rgba(222, 98, 187, 0.75);
+}
+.btn-hover.color-2 {
+  background-image: linear-gradient(to right, #667eea, #4596c9, #cd7ce8, #b97fe8);
+  box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+}
+.btn-hover.color-3 {
+  background-image: linear-gradient(to right, #4abaeb, #4481eb, #22d6d0, #5f98ed94);
+  box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+}
+
+/* insect_repellent.html */
+.bleackcap img {
+  width: 150px;
+  /*画像サイズ指定*/
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+}
+.hoihoi img {
+  width: 150px;
+  /*画像サイズ指定*/
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+/* children_and_animals.html */
+.baseboard img {
+  width: 150px;
+  /*画像サイズ指定*/
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+/* children_and_animals.html */
+.group_people_no_dog img {
+  width: 150px;
+  /*画像サイズ指定*/
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+}
